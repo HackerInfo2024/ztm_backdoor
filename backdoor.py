@@ -17,7 +17,7 @@ def reliable_recv():
                 except ValueError:
                         continue
 
-def conection ():
+def connection ():
        while True:
                time.sleep(20)  
                try:
@@ -26,7 +26,7 @@ def conection ():
                        s.close()
                        break
                except:
-                conection()
+                connection()
 
 def upload_file(file_name):
    f = open(file_name, 'rb')
