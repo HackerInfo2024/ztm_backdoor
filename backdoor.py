@@ -42,8 +42,8 @@ def download_file(file_name):
                    chunk = s.recv(1024)
            except socket.timeout as e:
                    break
-    s.settimeout(None)
-    f.close()
+   s.settimeout(None)
+   f.close()
 
 def shell():
         while True:
