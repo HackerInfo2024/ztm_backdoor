@@ -41,7 +41,7 @@ def download_file(file_name):
            try:
                    chunk = s.recv(1024)
            except socket.timeout as e:
-                  break
+                   break
     s.settimeout(None)
     f.close()
 
