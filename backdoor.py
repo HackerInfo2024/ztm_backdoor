@@ -2,6 +2,7 @@ import socket
 import time
 import subprocess
 import json
+import os
 
 def reliable_send(data):
         jsondata = json.dumps(data)
@@ -11,7 +12,7 @@ def reliable_recv():
         data = ''
         while True:
                 try:
-                        data = data + s.recv(1024).decode().rstip()
+                        data = data + s.recv(1024).decode().rstrip()
                         return json.loads(data)
                 except ValueError:
                         continue
